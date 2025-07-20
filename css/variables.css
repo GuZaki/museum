@@ -1,0 +1,15 @@
+:root {
+    --container: 1440px;
+    --padding-container: 40px;
+
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Forum", sans-serif;
+
+    --bg-dark: #030303;
+    --dark-red: #710707;
+    --light-gold :#caaa7d;
+    --gold: #9d8665;
+    --gold-link-active: #7e6c51;
+    --white: #ffffff;
+    --dark: #000000;
+}

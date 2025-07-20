@@ -1,0 +1,17 @@
+/*General*/
+@import './variables.css';
+@import './default.css';
+@import './normalize.css';
+
+/*Components*/
+@import './components/logo.css';
+@import './components/menu-navigation.css';
+@import './components/text.css';
+@import './components/card.css';
+
+/*Blocks*/
+@import './sections/header.css';
+@import './sections/welcome.css';
+@import './sections/visiting.css';
+@import './sections/explore.css';
+@import './sections/video.css';

@@ -1,0 +1,14 @@
+.subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+  padding-bottom: 25px;
+}
+
+.subtitle-bordered {
+  border-bottom: 3px solid var(--dark-red);
+}
