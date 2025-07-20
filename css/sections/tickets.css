@@ -7,3 +7,11 @@
   margin-bottom: 75px;
 }
 
+.tickets__content {
+  display: flex;
+  gap: 60px;
+}
+
+.tickets__content-img {
+  flex-shrink: 0;
+}

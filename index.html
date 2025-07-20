@@ -573,14 +573,48 @@
           <h2 class="tickets__title subtitle subtitle-bordered">Buy tickets</h2>
 
           <div class="tickets__content">
-            <div class="tickets__content-left">
-              <img src="./img/tickets/tickets-img.png" alt="picture">
+            <div class="tickets__content-img">
+              <img
+                src="./img/tickets/tickets-img.png"
+                alt="picture"
+                width="720"
+                height="550"
+              />
             </div>
-            <div class="tickets__content-right">
-              <form action="">
+            <form class="tickets__content-form form" action="">
+              <fieldset>
+                <legend class="form__subtitle">Ticket Type</legend>
+                <label>
+                  <input type="radio" name="ticket-type" checked />Permanent
+                  exhibition
+                </label>
+                <label>
+                  <input type="radio" name="ticket-type" /> Temporary exhibition
+                </label>
+                <label>
+                  <input type="radio" name="ticket-type" />Combined Admission
+                </label>
+              </fieldset>
 
-              </form>
-            </div>
+              <fieldset>
+                <legend class="form__subtitle">Amount</legend>
+                <div class="form__calculation">
+                  <label for="">Basic 18+</label>
+                  <input type="number" value="1" />
+                  <label for="">Senior 65+</label>
+                  <input type="number" value="1" />
+                </div>
+
+                <p class="form__subtitle total-price">
+                  Total €
+                  <span>220</span>
+                </p>
+              </fieldset>
+
+              <div class="form__bottom">
+                <button class="form__btn" type="submit">Buy Now</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>

@@ -8,6 +8,7 @@
 @import './components/menu-navigation.css';
 @import './components/text.css';
 @import './components/card.css';
+@import './components/form.css';
 
 /*Blocks*/
 @import './sections/header.css';

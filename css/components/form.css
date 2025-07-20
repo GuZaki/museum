@@ -1,0 +1,129 @@
+.form {
+  color: var(--dark);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.form fieldset {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+fieldset:first-child {
+  gap: 25px;
+}
+
+.form label {
+  cursor: pointer;
+}
+
+.form input[type="radio"] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  accent-color: var(--dark);
+  border: 2px solid var(--dark);
+}
+
+.form input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  top: 48%;
+  left: 48%;
+  transform: translate(-48%, -48%);
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: var(--dark);
+}
+
+fieldset:first-child input {
+  margin-right: 23px;
+}
+
+fieldset:nth-child(2) {
+  align-items: end;
+}
+
+.form__bottom {
+  text-align: end;
+}
+
+.form__subtitle {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+fieldset:first-child .form__subtitle {
+  margin-bottom: 50px;
+}
+
+fieldset:nth-child(2) .form__subtitle {
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.form__calculation {
+  max-width: 150px;
+}
+
+.form__calculation input {
+  position: relative;
+  width: 100%;
+  border: 3px solid var(--dark);
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.form__calculation input:first-child {
+  margin-bottom: 10px;
+}
+
+.form__calculation input::before {
+  content: "+";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.form__calculation label {
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+fieldset .total-price {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.form__btn {
+  border-radius: 2px;
+  background-color: var(--dark);
+  color: var(--white);
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  padding: 12px 38px;
+}
+
+.form__btn:hover {
+  opacity: 0.7;
+}
