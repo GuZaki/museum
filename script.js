@@ -92,3 +92,12 @@ progressBar.addEventListener('mouseup', () => {
         video.play();
     }
 });
+
+// const parallaxBackground = document.querySelector(".parallax-background");
+
+// window.addEventListener("scroll", () => {
+//   let scrollPosition = window.pageYOffset;
+//   parallaxBackground.style.transform = `translate3d(0, ${
+//     scrollPosition * 0.3
+//   }px, 0)`; //  0.3 - скорость параллакса
+// });
