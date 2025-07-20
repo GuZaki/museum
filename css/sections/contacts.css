@@ -1,0 +1,8 @@
+.contacts {
+  background-color: var(--white);
+  color: var(--gold);
+}
+
+.contacts__title {
+  margin-bottom: 75px;
+}

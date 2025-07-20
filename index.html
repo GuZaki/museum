@@ -1,293 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum - Welcome to the Louvre</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum - Welcome to the Louvre</title>
 
-  <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
 
-  <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__logo logo">
+          <img class="logo__img" src="./img/logo.svg" alt="logo" />
+          <span class="logo__text">Louvre</span>
+        </div>
 
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__inner container">
-
-      <div class="header__logo logo">
-        <img class="logo__img" src="./img/logo.svg" alt="logo">
-        <span class="logo__text">Louvre</span>
+        <nav class="header__menu menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#visiting">Visiting</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#explore">Explore</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#video">Video</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#tickets">Tickets</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Louvre museum</h1>
 
-      <nav class="header__menu menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-link" href="#visiting">Visiting</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#explore">Explore</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#video">Video</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#gallery">Gallery</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#tickets">Tickets</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <h1 class="visually-hidden">Louvre museum</h1>
-
-    <section class="welcome">
-      <div class="welcome__inner container">
-        <div class="welcome__content">
-          <h2 class="welcome__title subtitle">Welcome to&nbsp;the Louvre</h2>
-          <p class="welcome__text">From the castle to the museum</p>
-          <a class="welcome__link" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" target="_blank">Discover the Louvre</a>
-        </div>
-
-        <div class="welcome__slider-controls">
-          <div class="welcome__slider-pages">
-            <span>01</span>
-            <span>05</span>
-          </div>
-          <div class="welcome__slider-pagination">
-            <span class="pagination-active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="welcome__slider-arrows">
-            <span>
-              <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z" fill="currentColor"/>
-              </svg>
-            </span>
-            <span>
-              <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24.2775 1.97284e-06C26.0983 1.68661 28.0058 2.91738 30 3.69231L30 4.30769C28.0058 5.10541 26.0983 6.33618 24.2775 8L22.7601 8C23.6272 6.5641 24.4653 5.47009 25.2746 4.71795L3.48964e-07 4.71795L5.01636e-07 3.28205L25.2746 3.28205C24.4653 2.52992 23.6272 1.4359 22.7601 1.86378e-06L24.2775 1.97284e-06Z" fill="currentColor"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="visiting">
-      <div class="container">
-        <h2 class="visiting__title subtitle subtitle-bordered">Virtual tour</h2>
-        <div class="visiting__content">
-          <div class="visiting__card card">
-            <a class="card__link" href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815" target="_blank">
-              <img class="card__img" src="./img/visiting/card_1.png" alt="Royal Palace picture" width="440" height="285">
-              <h3 class="card__subtitle">Royal Palace</h3>
-              <div class="card__bottom">
-                <span>360° Virtual Tour</span>
-                <span>Google Street Panorama View</span>
-              </div>
-            </a>
+      <section class="welcome" id="welcome">
+        <div class="welcome__inner container">
+          <div class="welcome__content">
+            <h2 class="welcome__title subtitle">Welcome to&nbsp;the Louvre</h2>
+            <p class="welcome__text">From the castle to the museum</p>
+            <a
+              class="welcome__link"
+              href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
+              target="_blank"
+              >Discover the Louvre</a
+            >
           </div>
 
-          <div class="visiting__card card">
-            <a class="card__link" href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500" target="_blank">
-              <img class="card__img" src="./img/visiting/card_2.png" alt="Denon Wing picture" width="440" height="285">
-              <h3 class="card__subtitle">Denon Wing</h3>
-              <div class="card__bottom">
-                <span>360° Virtual Tour</span>
-                <span>Google Street Panorama View</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="visiting__card card">
-            <a class="card__link" href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120" target="_blank">
-              <img class="card__img" src="./img/visiting/card_3.png" alt="Colonnade Perrault picture" width="440" height="285">
-              <h3 class="card__subtitle">Colonnade Perrault</h3>
-              <div class="card__bottom">
-                <span>360° Virtual Tour</span>
-                <span>Google Street Panorama View</span>
-              </div>
-            </a>
-          </div>
-          
-          <div class="visiting__card card">
-            <a class="card__link" href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736" target="_blank">
-              <img class="card__img" src="./img/visiting/card_4.png" alt="Greek hall picture" width="440" height="285">
-              <h3 class="card__subtitle">Greek hall</h3>
-              <div class="card__bottom">
-                <span>360° Virtual Tour</span>
-                <span>Google Street Panorama View</span>
-              </div>
-            </a>
-          </div>
-          
-          <div class="visiting__card card">
-            <a class="card__link" href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120" target="_blank">
-              <img class="card__img" src="./img/visiting/card_5.png" alt="Mona Lisa picture" width="440" height="285">
-              <h3 class="card__subtitle">Mona Lisa</h3>
-              <div class="card__bottom">
-                <span>360° Virtual Tour</span>
-                <span>Google Street Panorama View</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="visiting__card card">
-            <a class="card__link" href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652" target="_blank">
-              <img class="card__img" src="./img/visiting/card_6.png" alt="Night Palace picture" width="440" height="285">
-              <h3 class="card__subtitle">Night Palace</h3>
-              <div class="card__bottom">
-                <span>360° Virtual Tour</span>
-                <span>Google Street Panorama View</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="explore">
-      <div class=" explore__inner container">
-        
-        <div class="explore__content">
-          <h2 class="explore__title subtitle subtitle-bordered">Picture explore</h2>
-          <div class="explore__text">
-            <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-            <p>It was cleaned in 1984 to remove a <span class="yellow">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-            <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
-          </div>
-        </div>
-        <div class="explore__slider">
-          <img class="explore__slider-img explore__slider-img-before" src="./img/explore/explore_before.jpg" width="720" height="700" alt="Picture by Diego Velázquez">
-          <img class="explore__slider-img explore__slider-img-after" src="./img/explore/explore_after.jpg" width="720" height="700" alt="Picture by Diego Velázquez">
-        
-          <label class="visually-hidden" for="slider-range">Picture before and after</label>
-          <input class="explore__slider-range-js" type="range" min="0" max="100" value="61" step="1" id="slider-range">
-          <div class="explore__slider-range"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="video">
-      <div class="container">
-        <div class="video__top">
-          <h2 class="video__title subtitle">Video journey</h2>
-          <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
-        </div>
-        
-        <div class="video__content">
-          <div class="video__content-main">
-            <video src="./img/video/video0.mp4" poster="./img/video/video_poster.png" id="myVideo" type="video/mp4">
-              Your browser does not support this video
-            </video>
-            <div class="controls">
-              <button id="playPauseBtn">
-                <svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z" fill="#B3B3B3" />
+          <div class="welcome__slider-controls">
+            <div class="welcome__slider-pages">
+              <span>01</span>
+              <span>05</span>
+            </div>
+            <div class="welcome__slider-pagination">
+              <span class="pagination-active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="welcome__slider-arrows">
+              <span>
+                <svg
+                  width="30"
+                  height="8"
+                  viewBox="0 0 30 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"
+                    fill="currentColor"
+                  />
                 </svg>
-              </button>
-              <input type="range" id="progressBar" min="0" max="100" value="53">   <output name="value" class="output" for="range"></output>
-              <button id="muteBtn">
-                <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_34)">
-                    <path d="M18.3326 0C17.8816 0 17.4905 0.156374 17.1604 0.469123L8.48928 8.68426H1.66737C1.21531 8.68426 0.825273 8.84064 0.495164 9.15339C0.165055 9.46614 0 9.83665 0 10.2639V19.7361C0 20.1633 0.165055 20.5339 0.495164 20.8466C0.825273 21.1594 1.21636 21.3157 1.66737 21.3157H8.48928L17.1604 29.5309C17.4905 29.8436 17.8806 30 18.3326 30C18.7847 30 19.1747 29.8436 19.5048 29.5309C19.8349 29.2181 20 28.8486 20 28.4203V1.57968C20 1.15239 19.8349 0.781873 19.5059 0.469123C19.1768 0.156374 18.7857 0 18.3337 0H18.3326Z" fill="#B3B3B3" />
-                    <path d="M28.0399 18.515C28.7419 17.434 29.0929 16.266 29.0929 15.01C29.0929 13.754 28.7419 12.582 28.0399 11.492C27.3379 10.402 26.4099 9.63396 25.2529 9.18796C25.0879 9.10596 24.8809 9.06396 24.6339 9.06396C24.2049 9.06396 23.8329 9.21697 23.5189 9.52197C23.2049 9.82897 23.0479 10.203 23.0479 10.649C23.0479 10.996 23.1469 11.289 23.3459 11.528C23.5449 11.767 23.7829 11.974 24.0639 12.147C24.3439 12.32 24.6249 12.51 24.9059 12.717C25.1869 12.924 25.4259 13.216 25.6239 13.596C25.8219 13.976 25.9209 14.447 25.9209 15.008C25.9209 15.569 25.8219 16.04 25.6239 16.42C25.4259 16.8 25.1869 17.093 24.9059 17.299C24.6249 17.505 24.3439 17.696 24.0639 17.869C23.7829 18.042 23.5439 18.249 23.3459 18.488C23.1479 18.727 23.0479 19.021 23.0479 19.367C23.0479 19.813 23.2059 20.188 23.5189 20.494C23.8329 20.798 24.2039 20.953 24.6339 20.953C24.8809 20.953 25.0879 20.912 25.2529 20.829C26.4089 20.366 27.3379 19.594 28.0399 18.512V18.515Z" fill="#B3B3B3" />
-                    <path d="M33.8744 22.1208C35.2915 19.9463 36 17.5714 36 14.999C36 12.4276 35.2915 10.0547 33.8744 7.87713C32.4574 5.70262 30.5822 4.11727 28.2497 3.12618C28.0337 3.04274 27.8167 3 27.5997 3C27.1667 3 26.7913 3.15976 26.4744 3.47927C26.1574 3.79878 26 4.17629 26 4.61384C26 5.26914 26.325 5.76469 26.975 6.1015C27.9075 6.58891 28.5414 6.95828 28.8744 7.21063C30.1078 8.11829 31.0707 9.25592 31.762 10.6255C32.4534 11.9952 32.7996 13.4523 32.7996 15C32.7996 16.5457 32.4534 18.0038 31.762 19.3745C31.0707 20.7441 30.1078 21.8817 28.8744 22.7894C28.5414 23.0417 27.9075 23.4111 26.975 23.8985C26.325 24.2353 26 24.7298 26 25.3862C26 25.8227 26.1585 26.2012 26.4744 26.5207C26.7903 26.8402 27.1738 27 27.6239 27C27.8238 27 28.0327 26.9573 28.2487 26.8738C30.5811 25.8817 32.4574 24.2984 33.8734 22.1219L33.8744 22.1208Z" fill="#B3B3B3" />
-                  </g>
+              </span>
+              <span>
+                <svg
+                  width="30"
+                  height="8"
+                  viewBox="0 0 30 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.2775 1.97284e-06C26.0983 1.68661 28.0058 2.91738 30 3.69231L30 4.30769C28.0058 5.10541 26.0983 6.33618 24.2775 8L22.7601 8C23.6272 6.5641 24.4653 5.47009 25.2746 4.71795L3.48964e-07 4.71795L5.01636e-07 3.28205L25.2746 3.28205C24.4653 2.52992 23.6272 1.4359 22.7601 1.86378e-06L24.2775 1.97284e-06Z"
+                    fill="currentColor"
+                  />
                 </svg>
-              </button>
-              <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
-              <button id="fullBtn">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_28)">
-                    <path d="M31.744 31.7534H23.2432V35.9999H35.9995V23.2402H31.744V31.7534Z" fill="#B3B3B3"/>
-                    <path d="M4.25546 23.2402H0V35.9999H12.7563V31.7534H4.25546V23.2402Z" fill="#B3B3B3"/>
-                    <path d="M0 12.7597H4.25546V4.25656H12.7563V0H0V12.7597Z" fill="#B3B3B3"/>
-                    <path d="M23.2432 0V4.25656H31.744V12.7597H35.9995V0H23.2432Z" fill="#B3B3B3"/>
-                  </g>
-                </svg>
-              </button>
+              </span>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="video__content-bottom">
-            <ul class="video__content-slider video-slider">
-              <li class="video-slider__slide">
-                <video src="./img/video/video3.mp4" poster="./img/video/poster3.jpg" type="video/mp4">Your browser does not support this video</video>
-              </li>
-              <li class="video-slider__slide">
-                <video src="https://youtu.be/Vi5D6FKhRmo" poster="./img/video/poster1.jpg" >Your browser does not support this video</video>
-              </li>
-              <li class="video-slider__slide">
-                <video src="./img/video/video2.mp4" poster="./img/video/poster2.jpg" type="video/mp4">Your browser does not support this video</video>
-              </li>
-              <li class="video-slider__slide">
-                <video src="./img/video/video3.mp4" poster="./img/video/poster4.jpg" type="video/mp4">Your browser does not support this video</video>
-              </li>
-            </ul>
+      <section class="visiting" id="visiting">
+        <div class="container">
+          <h2 class="visiting__title subtitle subtitle-bordered">
+            Virtual tour
+          </h2>
+          <div class="visiting__content">
+            <div class="visiting__card card">
+              <a
+                class="card__link"
+                href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815"
+                target="_blank"
+              >
+                <img
+                  class="card__img"
+                  src="./img/visiting/card_1.png"
+                  alt="Royal Palace picture"
+                  width="440"
+                  height="285"
+                />
+                <h3 class="card__subtitle">Royal Palace</h3>
+                <div class="card__bottom">
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </a>
+            </div>
 
-            <div class="video-slider__pagination">
-              <button class="pagination-left">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.2518 12.1259 8.66808 12.056 8.34805 11.6247L4.17414 6.00004L8.34805 0.375342C8.66808 -0.0559202 9.2518 -0.125842 9.65184 0.219168Z" fill="#999999"/>
-                </svg>
-              </button>
+            <div class="visiting__card card">
+              <a
+                class="card__link"
+                href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500"
+                target="_blank"
+              >
+                <img
+                  class="card__img"
+                  src="./img/visiting/card_2.png"
+                  alt="Denon Wing picture"
+                  width="440"
+                  height="285"
+                />
+                <h3 class="card__subtitle">Denon Wing</h3>
+                <div class="card__bottom">
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="visiting__card card">
+              <a
+                class="card__link"
+                href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120"
+                target="_blank"
+              >
+                <img
+                  class="card__img"
+                  src="./img/visiting/card_3.png"
+                  alt="Colonnade Perrault picture"
+                  width="440"
+                  height="285"
+                />
+                <h3 class="card__subtitle">Colonnade Perrault</h3>
+                <div class="card__bottom">
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="visiting__card card">
+              <a
+                class="card__link"
+                href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736"
+                target="_blank"
+              >
+                <img
+                  class="card__img"
+                  src="./img/visiting/card_4.png"
+                  alt="Greek hall picture"
+                  width="440"
+                  height="285"
+                />
+                <h3 class="card__subtitle">Greek hall</h3>
+                <div class="card__bottom">
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="visiting__card card">
+              <a
+                class="card__link"
+                href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120"
+                target="_blank"
+              >
+                <img
+                  class="card__img"
+                  src="./img/visiting/card_5.png"
+                  alt="Mona Lisa picture"
+                  width="440"
+                  height="285"
+                />
+                <h3 class="card__subtitle">Mona Lisa</h3>
+                <div class="card__bottom">
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="visiting__card card">
+              <a
+                class="card__link"
+                href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652"
+                target="_blank"
+              >
+                <img
+                  class="card__img"
+                  src="./img/visiting/card_6.png"
+                  alt="Night Palace picture"
+                  width="440"
+                  height="285"
+                />
+                <h3 class="card__subtitle">Night Palace</h3>
+                <div class="card__bottom">
+                  <span>360° Virtual Tour</span>
+                  <span>Google Street Panorama View</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore" id="explore">
+        <div class="explore__inner container">
+          <div class="explore__content">
+            <h2 class="explore__title subtitle subtitle-bordered">
+              Picture explore
+            </h2>
+            <div class="explore__text">
+              <p>
+                Las Meninas is a 1656 painting by Diego Velázquez, the leading
+                artist of the Spanish Golden Age.
+              </p>
+              <p>
+                It was cleaned in 1984 to remove a
+                <span class="yellow">"yellow veil"</span> of dust that had
+                gathered since the previous restoration in the 19th century.
+              </p>
+              <p>
+                The cleaning provoked furious protests, not because the picture
+                had been damaged in any way, but because it looked different.
+              </p>
+            </div>
+          </div>
+          <div class="explore__slider">
+            <img
+              class="explore__slider-img explore__slider-img-before"
+              src="./img/explore/explore_before.jpg"
+              width="720"
+              height="700"
+              alt="Picture by Diego Velázquez"
+            />
+            <img
+              class="explore__slider-img explore__slider-img-after"
+              src="./img/explore/explore_after.jpg"
+              width="720"
+              height="700"
+              alt="Picture by Diego Velázquez"
+            />
+
+            <label class="visually-hidden" for="slider-range"
+              >Picture before and after</label
+            >
+            <input
+              class="explore__slider-range-js"
+              type="range"
+              min="0"
+              max="100"
+              value="61"
+              step="1"
+              id="slider-range"
+            />
+            <div class="explore__slider-range"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video" id="video">
+        <div class="container">
+          <div class="video__top">
+            <h2 class="video__title subtitle">Video journey</h2>
+            <p>
+              Enter and visit one of the most famous museums in the world and
+              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+            </p>
+          </div>
+
+          <div class="video__content">
+            <div class="video__content-main">
+              <video
+                src="./img/video/video0.mp4"
+                poster="./img/video/video_poster.png"
+                id="myVideo"
+                type="video/mp4"
+              >
+                Your browser does not support this video
+              </video>
+              <div class="controls">
+                <button id="playPauseBtn">
+                  <svg
+                    width="23"
+                    height="31"
+                    viewBox="0 0 23 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z"
+                      fill="#B3B3B3"
+                    />
+                  </svg>
+                </button>
+                <input
+                  type="range"
+                  id="progressBar"
+                  min="0"
+                  max="100"
+                  value="53"
+                />
+                <output name="value" class="output" for="range"></output>
+                <button id="muteBtn">
+                  <svg
+                    width="36"
+                    height="30"
+                    viewBox="0 0 36 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_34)">
+                      <path
+                        d="M18.3326 0C17.8816 0 17.4905 0.156374 17.1604 0.469123L8.48928 8.68426H1.66737C1.21531 8.68426 0.825273 8.84064 0.495164 9.15339C0.165055 9.46614 0 9.83665 0 10.2639V19.7361C0 20.1633 0.165055 20.5339 0.495164 20.8466C0.825273 21.1594 1.21636 21.3157 1.66737 21.3157H8.48928L17.1604 29.5309C17.4905 29.8436 17.8806 30 18.3326 30C18.7847 30 19.1747 29.8436 19.5048 29.5309C19.8349 29.2181 20 28.8486 20 28.4203V1.57968C20 1.15239 19.8349 0.781873 19.5059 0.469123C19.1768 0.156374 18.7857 0 18.3337 0H18.3326Z"
+                        fill="#B3B3B3"
+                      />
+                      <path
+                        d="M28.0399 18.515C28.7419 17.434 29.0929 16.266 29.0929 15.01C29.0929 13.754 28.7419 12.582 28.0399 11.492C27.3379 10.402 26.4099 9.63396 25.2529 9.18796C25.0879 9.10596 24.8809 9.06396 24.6339 9.06396C24.2049 9.06396 23.8329 9.21697 23.5189 9.52197C23.2049 9.82897 23.0479 10.203 23.0479 10.649C23.0479 10.996 23.1469 11.289 23.3459 11.528C23.5449 11.767 23.7829 11.974 24.0639 12.147C24.3439 12.32 24.6249 12.51 24.9059 12.717C25.1869 12.924 25.4259 13.216 25.6239 13.596C25.8219 13.976 25.9209 14.447 25.9209 15.008C25.9209 15.569 25.8219 16.04 25.6239 16.42C25.4259 16.8 25.1869 17.093 24.9059 17.299C24.6249 17.505 24.3439 17.696 24.0639 17.869C23.7829 18.042 23.5439 18.249 23.3459 18.488C23.1479 18.727 23.0479 19.021 23.0479 19.367C23.0479 19.813 23.2059 20.188 23.5189 20.494C23.8329 20.798 24.2039 20.953 24.6339 20.953C24.8809 20.953 25.0879 20.912 25.2529 20.829C26.4089 20.366 27.3379 19.594 28.0399 18.512V18.515Z"
+                        fill="#B3B3B3"
+                      />
+                      <path
+                        d="M33.8744 22.1208C35.2915 19.9463 36 17.5714 36 14.999C36 12.4276 35.2915 10.0547 33.8744 7.87713C32.4574 5.70262 30.5822 4.11727 28.2497 3.12618C28.0337 3.04274 27.8167 3 27.5997 3C27.1667 3 26.7913 3.15976 26.4744 3.47927C26.1574 3.79878 26 4.17629 26 4.61384C26 5.26914 26.325 5.76469 26.975 6.1015C27.9075 6.58891 28.5414 6.95828 28.8744 7.21063C30.1078 8.11829 31.0707 9.25592 31.762 10.6255C32.4534 11.9952 32.7996 13.4523 32.7996 15C32.7996 16.5457 32.4534 18.0038 31.762 19.3745C31.0707 20.7441 30.1078 21.8817 28.8744 22.7894C28.5414 23.0417 27.9075 23.4111 26.975 23.8985C26.325 24.2353 26 24.7298 26 25.3862C26 25.8227 26.1585 26.2012 26.4744 26.5207C26.7903 26.8402 27.1738 27 27.6239 27C27.8238 27 28.0327 26.9573 28.2487 26.8738C30.5811 25.8817 32.4574 24.2984 33.8734 22.1219L33.8744 22.1208Z"
+                        fill="#B3B3B3"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <input
+                  type="range"
+                  id="volumeSlider"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+                <button id="fullBtn">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_28)">
+                      <path
+                        d="M31.744 31.7534H23.2432V35.9999H35.9995V23.2402H31.744V31.7534Z"
+                        fill="#B3B3B3"
+                      />
+                      <path
+                        d="M4.25546 23.2402H0V35.9999H12.7563V31.7534H4.25546V23.2402Z"
+                        fill="#B3B3B3"
+                      />
+                      <path
+                        d="M0 12.7597H4.25546V4.25656H12.7563V0H0V12.7597Z"
+                        fill="#B3B3B3"
+                      />
+                      <path
+                        d="M23.2432 0V4.25656H31.744V12.7597H35.9995V0H23.2432Z"
+                        fill="#B3B3B3"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="video__content-bottom">
+              <ul class="video__content-slider video-slider">
+                <li class="video-slider__slide">
+                  <video
+                    src="./img/video/video3.mp4"
+                    poster="./img/video/poster3.jpg"
+                    type="video/mp4"
+                  >
+                    Your browser does not support this video
+                  </video>
+                </li>
+                <li class="video-slider__slide">
+                  <video
+                    src="https://youtu.be/Vi5D6FKhRmo"
+                    poster="./img/video/poster1.jpg"
+                  >
+                    Your browser does not support this video
+                  </video>
+                </li>
+                <li class="video-slider__slide">
+                  <video
+                    src="./img/video/video2.mp4"
+                    poster="./img/video/poster2.jpg"
+                    type="video/mp4"
+                  >
+                    Your browser does not support this video
+                  </video>
+                </li>
+                <li class="video-slider__slide">
+                  <video
+                    src="./img/video/video3.mp4"
+                    poster="./img/video/poster4.jpg"
+                    type="video/mp4"
+                  >
+                    Your browser does not support this video
+                  </video>
+                </li>
+              </ul>
+
+              <div class="video-slider__pagination">
+                <button class="pagination-left">
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.2518 12.1259 8.66808 12.056 8.34805 11.6247L4.17414 6.00004L8.34805 0.375342C8.66808 -0.0559202 9.2518 -0.125842 9.65184 0.219168Z"
+                      fill="#999999"
+                    />
+                  </svg>
+                </button>
                 <span class="pagination-active"></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-              <button class="pagination-rigth">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.348163 0.219168C0.748196 -0.125842 1.33192 -0.0559202 1.65195 0.375342L5.82586 6.00004L1.65194 11.6247C1.33192 12.056 0.748195 12.1259 0.348162 11.7809C-0.0518709 11.4359 -0.116729 10.8066 0.203297 10.3753L3.45008 6.00004L0.203298 1.62473C-0.116728 1.19347 -0.05187 0.564177 0.348163 0.219168ZM4.5223 0.219168C4.92234 -0.125841 5.50606 -0.0559197 5.82609 0.375342L10 6.00004L5.82609 11.6247C5.50606 12.056 4.92234 12.1259 4.5223 11.7809C4.12227 11.4359 4.05741 10.8066 4.37744 10.3753L7.62422 6.00004L4.37744 1.62473C4.05741 1.19347 4.12227 0.564178 4.5223 0.219168Z" fill="#999999"/>
-                </svg>
-              </button>
+                <button class="pagination-rigth">
+                  <svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.348163 0.219168C0.748196 -0.125842 1.33192 -0.0559202 1.65195 0.375342L5.82586 6.00004L1.65194 11.6247C1.33192 12.056 0.748195 12.1259 0.348162 11.7809C-0.0518709 11.4359 -0.116729 10.8066 0.203297 10.3753L3.45008 6.00004L0.203298 1.62473C-0.116728 1.19347 -0.05187 0.564177 0.348163 0.219168ZM4.5223 0.219168C4.92234 -0.125841 5.50606 -0.0559197 5.82609 0.375342L10 6.00004L5.82609 11.6247C5.50606 12.056 4.92234 12.1259 4.5223 11.7809C4.12227 11.4359 4.05741 10.8066 4.37744 10.3753L7.62422 6.00004L4.37744 1.62473C4.05741 1.19347 4.12227 0.564178 4.5223 0.219168Z"
+                      fill="#999999"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="gallery">
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="gallery__title subtitle">Art Gallery</h2>
+
+          <div class="gallery__content">
+            <div class="gallery__content-col">
+              <img src="./img/gallery/galery2.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery9.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery4.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery6.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery5.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery7.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery8.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery3.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery10.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery11.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery12.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery13.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery14.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery15.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery1.jpg" alt="Gallery picture" />
+            </div>
+            <div class="gallery__content-col">
+              <img src="./img/gallery/galery1.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery8.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery3.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery5.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery4.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery6.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery7.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery2.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery9.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery10.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery11.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery12.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery13.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery14.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery15.jpg" alt="Gallery picture" />
+            </div>
+            <div class="gallery__content-col">
+              <img src="./img/gallery/galery7.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery10.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery15.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery12.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery9.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery3.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery13.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery14.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery8.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery1.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery2.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery11.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery4.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery5.jpg" alt="Gallery picture" />
+              <img src="./img/gallery/galery6.jpg" alt="Gallery picture" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tickets" id="tickets">
+        <div class="container">
+          <h2 class="tickets__title subtitle subtitle-bordered">Buy tickets</h2>
+
+          <div class="tickets__content">
+            <div class="tickets__content-left">
+              <img src="./img/tickets/tickets-img.png" alt="picture">
+            </div>
+            <div class="tickets__content-right">
+              <form action="">
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title subtitle subtitle-bordered">Contacts</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
+        <div class="footer__logo logo">
+          <img class="logo__img" src="./img/logo.svg" alt="logo" />
+          <span class="logo__text">Louvre</span>
+        </div>
 
+        <nav class="footer__menu menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#visiting">Visiting</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#explore">Explore</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#video">Video</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#tickets">Tickets</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </footer>
 
-    <section class="tickets">
-      <div class="container">
-
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="container">
-
-      </div>
-    </section>
-  </main> 
-
-  <footer class="footer"></footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

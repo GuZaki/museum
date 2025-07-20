@@ -1,0 +1,9 @@
+.tickets {
+  background-color: var(--white);
+  color: var(--gold);
+}
+
+.tickets__title {
+  margin-bottom: 75px;
+}
+

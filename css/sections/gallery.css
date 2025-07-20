@@ -1,0 +1,33 @@
+.gallery {
+  padding-bottom: 0;
+  
+}
+
+.gallery__title {
+  margin-bottom: 50px;
+}
+
+.gallery__content {
+  display: flex;
+  gap: 36px;
+  max-height: 1960px;
+  overflow: hidden;
+  
+}
+
+.gallery__content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: linear-gradient(180deg rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+.gallery__content-col img {
+
+  background: linear-gradient(180deg rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+.gallery__content-col:first-child,
+.gallery__content-col:last-child {
+  margin-top: 50px;
+}
