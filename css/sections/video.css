@@ -33,7 +33,7 @@
 }
 
 .video__content-main::before {
-  content: url('/img/video/videoplayer_main_btn.svg');
+  content: url('./img/video/videoplayer_main_btn.svg');
   position: absolute;
   display: block;
   
