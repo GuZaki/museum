@@ -79,7 +79,6 @@ fieldset:nth-child(2) .form__subtitle {
   position: relative;
   width: 100%;
   border: 3px solid var(--dark);
-  width: 150px;
   height: 50px;
   text-align: center;
   font-weight: 300;
