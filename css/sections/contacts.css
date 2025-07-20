@@ -6,3 +6,31 @@
 .contacts__title {
   margin-bottom: 75px;
 }
+
+.contacts__content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 22px;
+  color: var(--dark);
+}
+
+.contacts__adress p {
+  margin-bottom: 25px;
+}
+
+.contacts__subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  max-width: 227px;
+  margin-bottom: 50px;
+}
+
+.contacts__map {
+  flex-shrink: 0;
+}
+
+.contacts a:hover {
+  color: var(--gold);
+}

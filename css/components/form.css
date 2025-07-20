@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .form fieldset {
@@ -18,6 +19,7 @@ fieldset:first-child {
 
 .form label {
   cursor: pointer;
+  display: block;
 }
 
 .form input[type="radio"] {
@@ -76,7 +78,7 @@ fieldset:nth-child(2) .form__subtitle {
 }
 
 .form__calculation input {
-  position: relative;
+  display: block;
   width: 100%;
   border: 3px solid var(--dark);
   height: 50px;
@@ -86,22 +88,29 @@ fieldset:nth-child(2) .form__subtitle {
   margin-top: 15px;
 }
 
-.form__calculation input:first-child {
+#number1 {
   margin-bottom: 10px;
 }
 
-.form__calculation input::before {
-  content: "+";
+.form__calculation span {
+  content: "-";
   display: block;
   position: absolute;
-  width: 5px;
-  height: 5px;
   top: 50%;
   font-weight: 400;
   font-size: 32px;
 }
 
+.form__calculation .minus {
+  left: 14px;
+}
+
+.form__calculation .plus {
+  right: 14px;
+}
+
 .form__calculation label {
+  position: relative;
   font-weight: 300;
   font-size: 22px;
   margin-bottom: 15px;
