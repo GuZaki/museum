@@ -1,6 +1,17 @@
 .gallery {
   padding-bottom: 0;
-  
+  position: relative;
+}
+
+.gallery::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  height: 360px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
 .gallery__title {
@@ -12,19 +23,12 @@
   gap: 36px;
   max-height: 1960px;
   overflow: hidden;
-  
 }
 
 .gallery__content-col {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  background: linear-gradient(180deg rgba(0, 0, 0, 0) 0%, #000 100%);
-}
-
-.gallery__content-col img {
-
-  background: linear-gradient(180deg rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
 .gallery__content-col:first-child,
